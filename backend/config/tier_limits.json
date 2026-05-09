@@ -1,0 +1,64 @@
+{
+  "tiers": {
+    "FREE": {
+      "displayName": "Free",
+      "description": "Perfect for testing and small-scale operations",
+      "monthlyPrice": 0,
+      "maxWarehouses": 2,
+      "maxSkusPerWarehouse": 500,
+      "maxConcurrentOrdersPerSecond": 10,
+      "maxConcurrentConnections": 5,
+      "orderHistoryRetentionDays": 7,
+      "dailyApiRequestLimit": 1000,
+      "dataExportFormats": ["CSV"],
+      "advancedFeatures": {
+        "predictiveRestocking": false,
+        "demandForecasting": false,
+        "multiRegionSync": false,
+        "webhooks": false,
+        "customReporting": false
+      },
+      "uptimeSlaPercent": 99.0
+    },
+    "PROFESSIONAL": {
+      "displayName": "Professional",
+      "description": "For growing businesses with moderate scale",
+      "monthlyPrice": 29,
+      "maxWarehouses": 10,
+      "maxSkusPerWarehouse": 5000,
+      "maxConcurrentOrdersPerSecond": 100,
+      "maxConcurrentConnections": 50,
+      "orderHistoryRetentionDays": 90,
+      "dailyApiRequestLimit": 50000,
+      "dataExportFormats": ["CSV", "JSON", "Parquet"],
+      "advancedFeatures": {
+        "predictiveRestocking": true,
+        "demandForecasting": true,
+        "multiRegionSync": false,
+        "webhooks": true,
+        "customReporting": true
+      },
+      "uptimeSlaPercent": 99.5
+    },
+    "ENTERPRISE": {
+      "displayName": "Enterprise",
+      "description": "Unlimited scale with dedicated support",
+      "monthlyPrice": -1,
+      "maxWarehouses": -1,
+      "maxSkusPerWarehouse": -1,
+      "maxConcurrentOrdersPerSecond": -1,
+      "maxConcurrentConnections": -1,
+      "orderHistoryRetentionDays": -1,
+      "dailyApiRequestLimit": -1,
+      "dataExportFormats": ["CSV", "JSON", "Parquet", "Avro", "Protobuf"],
+      "advancedFeatures": {
+        "predictiveRestocking": true,
+        "demandForecasting": true,
+        "multiRegionSync": true,
+        "webhooks": true,
+        "customReporting": true
+      },
+      "uptimeSlaPercent": 99.99
+    }
+  }
+}

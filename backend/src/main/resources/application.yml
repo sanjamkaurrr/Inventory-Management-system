@@ -1,0 +1,46 @@
+# =====================================================
+# Inventory Management System — Application Config
+# =====================================================
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: inventory-management
+
+# ---- Application Settings ----
+app:
+  # Demo mode loads embedded seed data instead of external APIs
+  demo-mode: true
+
+  # Data source paths (used when demo-mode is false)
+  data:
+    warehouse-source: "FILE:config/warehouses.json"
+    product-source: "FILE:data/products.csv"
+    inventory-source: "FILE:data/inventory_snapshot.csv"
+    tier-config-source: "FILE:config/tier_limits.json"
+
+  # Default tier for API keys that aren't registered
+  default-tier: FREE
+
+  # Order cleanup scheduler (runs daily at 2 AM UTC)
+  cleanup:
+    enabled: true
+    cron: "0 0 2 * * *"
+
+# ---- Swagger / OpenAPI ----
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+
+# ---- Logging ----
+logging:
+  level:
+    root: INFO
+    com.inventory: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

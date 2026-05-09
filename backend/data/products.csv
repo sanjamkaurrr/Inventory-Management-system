@@ -1,0 +1,11 @@
+SKU,ProductName,Category,WeightKg,BasePrice,ReorderPoint,SafetyStock,Active
+SKU-001,Laptop Pro 15,Electronics,2.1,1299.99,10,5,true
+SKU-002,USB-C Cable 1m,Accessories,0.05,19.99,100,50,true
+SKU-003,Wireless Mouse,Accessories,0.15,49.99,50,25,true
+SKU-004,Monitor 27 4K,Electronics,8.5,599.99,5,2,true
+SKU-005,Mechanical Keyboard,Accessories,0.8,149.99,30,15,true
+SKU-006,Webcam HD 1080p,Electronics,0.25,79.99,40,20,true
+SKU-007,USB Hub 7-Port,Accessories,0.2,39.99,60,30,true
+SKU-008,Laptop Stand,Accessories,1.2,89.99,20,10,true
+SKU-009,Noise Cancelling Headphones,Electronics,0.35,249.99,15,8,true
+SKU-010,Portable SSD 1TB,Electronics,0.1,119.99,25,12,true
